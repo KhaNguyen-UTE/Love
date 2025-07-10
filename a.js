@@ -88,7 +88,7 @@ function initengahan(){
     pesan5.innerHTML=vketik5;
     wallpaper.style.opacity = 0; // làm mờ
     setTimeout(() => {
-    wallpaper.src = "https://khanguyen-ute.github.io/hello/2.jpg"; // đổi nền
+    wallpaper.src = "https://khanguyen-ute.github.io/hello/5.jpg"; // đổi nền
     wallpaper.style.opacity = 1; // hiện lại
   }, 500); // thời gian delay khi đổi ảnh
    setTimeout(aktipesan6,700);
