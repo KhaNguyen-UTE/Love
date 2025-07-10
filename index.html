@@ -29,7 +29,7 @@
      <div id="kadoIn">
        <!-- Tombol Surat --><img src="https://feeldreams.github.io/kadoin.png"/>
      </div>
-     <p id="ket">Mở quà đii bé iuu :3</p>
+     <p id="ket">Mở quà đi bé iuu :3</p>
 
      <div class="kumpulanstiker">
          <!-- Stiker untuk Konten -->
@@ -45,34 +45,35 @@
      <p id="halo" class="halo"></p>
      
      <div><blockquote id='bq' data-text='💞'>
-       <p id="kalimat">Hôm nay anh ở đây muốn nói với em một điều nhỏ nhoyy hoyy 👉👈</p>
+       <p id="kalimat">MK🐬 muốn nói với Na một điều nhỏ nhoy hoyy 👉💓👈</p>
 
        <!-- Pesan -->
-       <p id="pesan1">Chạm đủ 4 love nhoo  ❤️</p>
+       <p id="pesan1">Chạm đủ 4 love nhoo  😍</p>
        <div id="kolombaru">
-         <li id="lv1"> ❤️</li>
-         <li id="lv2"> ❤️</li>
-         <li id="lv3"> ❤️</li>
-         <li id="lv4"> ❤️</li>
+         <li id="lv1"> 💙</li>
+         <li id="lv2"> 💛</li>
+         <li id="lv3"> 💜</li>
+         <li id="lv4"> 🧡</li>
        </div>
 
        <p id="pesan2">Tuỵt zờiiiii! 💘</p>
-       <p id="pesan3">Anh muốn nóiii với em là là là.....</p>
-       <p id="pesan4" class="sty2">Anh iuu emmm nhìu lắmmm lắm nhunnn</p>
-       <p id="pesan5" class="sty2">hong biết aiii đó có nhớ anhhh khonnggg hàaaaa</p>
-       <p id="pesan6" class="sty2">Còn anhh trong đầuuu bây giờ chỉ có hình póngg dáng em thoaii🤧</p>
+       <p id="pesan3">Anh muốn nóiii với em là anhhhh.......</p>
+       <p id="pesan4" class="sty2">Anh iuu emmm nhìu lắmmm nhaa</p>
+       <p id="pesan5" class="sty2">Chúc em bé có 1 ngày tuyệt vời nhaaa 🍀🍀🍀</p>
+       <p id="pesan6" class="sty2">Nhớ em muốn xỉu...xỉuu đớn xỉu đau 😓😣😭😢</p>
+       <p id="pesan7" class="sty2">Nay với mai mà rảnh là ới anh lèn nhaaaaaaaa😘😘🌸🌸</p>
 
        <!-- Tombol Lanjut -->
-       <p id="opsL">Bấm vào màn hình đi nàaaaa bbii</p>
+       <p id="opsL">Bấm vào màn hình đi nàaaaa</p>
      </blockquote></div>
 
      <!-- Tombol Kirim Pesan -->
-     <div id="Tombol"><a id="By">&#128140; Click</a></div>
+     <div id="Tombol"><a id="By">&#128140; Túi mù nè</a></div>
      
      <!-- Pesan Ditolak -->
      <div id="pesanditolak">
        <img id="stikerditolak" src="https://feeldreams.github.io/weee.gif"/>
-       <p id="kataditolak">Bộ em thích từ chối lắm hả ? Nhưng mà em bị lừa rồiii cục cưng 😆</p>
+       <p id="kataditolak">Thích dãy quá à. Chờ tí 😒</p>
      </div>
 
    </div>
@@ -84,24 +85,24 @@
   
   async function inipesan(){
     var { value: nama } = await swals.fire({
-           title: 'Tên của bé iuu là gì?', input: 'text',
+           title: 'Nhớ ngta hog? (Có - Kó)', input: 'text',
        });
-       if(nama && nama.length < 11){
+       if((nama == "Có") | (nama == "Kó")){
          window.nama = nama;
-         vketikhalo="Hai, " + nama + " 💑";
+         vketikhalo="Hé lô pé 💑";
          mulainama();
          } else {
-           await swals.fire('Bộ em hong có tên hả!', 'Tên của người đẹp chỉ chứa 10 ký tự hoii nhaaa, ya!');inipesan();
+           await swals.fire('Có hoặc Kó hoi nha 😝');inipesan();
     }
   }
 
   
-  var tanya = 'có rảnh hongg nói chuyện với anh chút nhéee 😳';
-  var opstanya = 'Lựa chọn của em là......';
-  var tompositif = 'Em đồng ý';
-  var tomnegatif = 'Em hong chịu';
+  var tanya = 'Có giọng MK ha 😝, mở nhỏ nhỏ ha🔇';
+  var opstanya = 'Chờ hết nhạc rồi bấm tiếp cho rõ ạ 🤦‍♂️';
+  var tompositif = 'Okie';
+  var tomnegatif = 'Hong chịu';
   
-  async function pertanyaan(){var { isConfirmed: prtanya } = await swals.fire({title: nama + ' ' + tanya, text: '' + opstanya, imageUrl: '' + fotostiker5.src, showCancelButton: true, confirmButtonText: '' + tompositif, cancelButtonText: '' + tomnegatif,});
+  async function pertanyaan(){var { isConfirmed: prtanya } = await swals.fire({title: tanya, text: '' + opstanya, imageUrl: '' + fotostiker5.src, showCancelButton: true, confirmButtonText: '' + tompositif, cancelButtonText: '' + tomnegatif,});
     if(prtanya){
 	pesanwhatsapp = "Iyaa " + nama + " kangen kamu juga kok! ><";
 	menuju();
