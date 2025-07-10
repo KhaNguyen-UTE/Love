@@ -22,7 +22,7 @@ function initengahan(){
 
   function tombol(){wallpaper.style="transform: scale(1);";Tombol.style="opacity:1;transform: scale(1);";fungsi=1}
   document.getElementById("By").onclick = function() {if(fungsi==1){pertanyaan();} if(fungsi==2){menuju();}}
-  async function menuju(){await swals.fire('Uci!', 'Tặng bé bi nè, ngủ hoi, mơ thấy anh nha 🍀🍀🌸', 'success');window.location = "khachumo.mp4";}
+  async function menuju(){await swals.fire('Uci!', 'Tặng bé bi nè, ngủ hoi, mơ thấy anh nha 🍀🍀🌸', 'success');window.location = "https://cuongnobro.github.io/Baby/";}
   
   vketik1=kalimat.innerHTML;kalimat.innerHTML = "";
   function mulaiketik1(){

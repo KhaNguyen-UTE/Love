@@ -48,12 +48,12 @@
        <p id="kalimat">MK🐬 muốn nói với Na một điều nhỏ nhoyy hoyy 👉👈</p>
 
        <!-- Pesan -->
-       <p id="pesan1">Chạm đủ 4 love nhoo  ❤️</p>
+       <p id="pesan1">Chạm đủ 4 love nhoo  💙</p>
        <div id="kolombaru">
-         <li id="lv1"> ❤️</li>
-         <li id="lv2"> ❤️</li>
-         <li id="lv3"> ❤️</li>
-         <li id="lv4"> ❤️</li>
+         <li id="lv1"> 💙</li>
+         <li id="lv2"> 💙</li>
+         <li id="lv3"> 💙</li>
+         <li id="lv4"> 💙</li>
        </div>
 
        <p id="pesan2">Tuỵt zờiiiii! 💘</p>
@@ -104,10 +104,10 @@
   
   async function pertanyaan(){var { isConfirmed: prtanya } = await swals.fire({title: tanya, text: '' + opstanya, imageUrl: '' + fotostiker5.src, showCancelButton: true, confirmButtonText: '' + tompositif, cancelButtonText: '' + tomnegatif,});
     if(prtanya){
-	pesanwhatsapp = "Iyaa " + " kangen kamu juga kok! ><";
+	pesanwhatsapp = "Iyaa " + nama + " kangen kamu juga kok! ><";
 	menuju();
     } else {
-	pesanwhatsapp = " engga kangen kamu wleee! :p";
+	pesanwhatsapp = nama + " engga kangen kamu wleee! :p";
 	await swalst.fire({title: '' + kataditolak.innerHTML, timer: 2000, imageUrl: '' + stikerditolak.src,});
 	menuju();
     }
