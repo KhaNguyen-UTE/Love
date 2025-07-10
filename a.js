@@ -57,15 +57,7 @@ function initengahan(){
   new TypeIt("#kalimat", {
   strings: ["" + vketik2, "" + vketik3], startDelay: 20, speed: 30, cursor: true, deleteSpeed: 30, breakLines: false, waitUntilVisible: true, lifelike: true,
   afterComplete: function(){
-    kalimat.innerHTML=vketik3;
-    var nhacMoi = new Audio("Chimuonnamtaynguoi.mp3");
-    nhacMoi.play();
-    wallpaper.style.opacity = 0; // làm mờ
-    setTimeout(() => {
-    wallpaper.src = "1.jpg"; // đổi nền
-    wallpaper.style.opacity = 1; // hiện lại
-  }, 500); // thời gian delay khi đổi ảnh
-    setTimeout(aktipesan4,700);
+    kalimat.innerHTML=vketik3;setTimeout(aktipesan4,700);
   },}).go();
   }
   vketik4=pesan4.innerHTML;pesan4.innerHTML="";
@@ -85,13 +77,7 @@ function initengahan(){
   new TypeIt("#pesan5", {
   strings: ["" + vketik5], startDelay: 1, speed: 52, cursor: true, waitUntilVisible: true, lifelike: true,
   afterComplete: function(){
-    pesan5.innerHTML=vketik5 + " ><";
-    wallpaper.style.opacity = 0; // làm mờ
-    setTimeout(() => {
-    wallpaper.src = "2.jpg"; // đổi nền
-    wallpaper.style.opacity = 1; // hiện lại
-  }, 500); // thời gian delay khi đổi ảnh
-   setTimeout(aktipesan6,700);
+    pesan5.innerHTML=vketik5 + " ><";setTimeout(aktipesan6,700);
   },}).go();
   }
   vketik6=pesan6.innerHTML;pesan6.innerHTML="";
