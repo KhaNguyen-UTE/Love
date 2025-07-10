@@ -22,7 +22,7 @@ function initengahan(){
 
   function tombol(){wallpaper.style="transform: scale(1);";Tombol.style="opacity:1;transform: scale(1);";fungsi=1}
   document.getElementById("By").onclick = function() {if(fungsi==1){pertanyaan();} if(fungsi==2){menuju();}}
-  async function menuju(){await swals.fire('Ukie!', 'Tặng pé nè', 'success');window.location = "https://khanguyen-ute.github.io/hello/1.jpg";}
+  async function menuju(){await swals.fire('Hè hè', 'Tặng pé nè', 'success');window.location = "https://khanguyen-ute.github.io/hello/hoa.mp4";}
   
   vketik1=kalimat.innerHTML;kalimat.innerHTML = "";
   function mulaiketik1(){
@@ -85,7 +85,7 @@ function initengahan(){
   new TypeIt("#pesan5", {
   strings: ["" + vketik5], startDelay: 1, speed: 52, cursor: true, waitUntilVisible: true, lifelike: true,
   afterComplete: function(){
-    pesan5.innerHTML=vketik5 + " ><";
+    pesan5.innerHTML=vketik5;
     wallpaper.style.opacity = 0; // làm mờ
     setTimeout(() => {
     wallpaper.src = "https://khanguyen-ute.github.io/hello/2.jpg"; // đổi nền
