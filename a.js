@@ -22,7 +22,7 @@ function initengahan(){
 
   function tombol(){wallpaper.style="transform: scale(1);";Tombol.style="opacity:1;transform: scale(1);";fungsi=1}
   document.getElementById("By").onclick = function() {if(fungsi==1){pertanyaan();} if(fungsi==2){menuju();}}
-  async function menuju(){await swals.fire('Uci!', 'Tặng bé bi nè, ngủ hoi, mơ thấy anh nha 🍀🍀🌸', 'success');window.location = "https://cuongnobro.github.io/Baby/";}
+  async function menuju(){await swals.fire('Uci!', 'Nhớ liên hệ anhh nhaaa bấy biii , anhh có này tặng choo bbi nàa!', 'success');window.location = "https://cuongnobro.github.io/Baby/";}
   
   vketik1=kalimat.innerHTML;kalimat.innerHTML = "";
   function mulaiketik1(){
@@ -87,17 +87,7 @@ function initengahan(){
   new TypeIt("#pesan6", {
   strings: ["" + vketik6], startDelay: 1, speed: 52, cursor: true, waitUntilVisible: true, lifelike: true,
   afterComplete: function(){
-    pesan6.innerHTML=vketik6;setTimeout(aktipesan7,700);
-  },}).go();
-  }
-  vketik7=pesan7.innerHTML;pesan7.innerHTML="";
-  function aktipesan7(){
-  wallpaper.style="transform: scale(1);";
-  fthilang();ftganti=4;setTimeout(ftmuncul,300);
-  new TypeIt("#pesan7", {
-  strings: ["" + vketik7], startDelay: 1, speed: 52, cursor: true, waitUntilVisible: true, lifelike: true,
-  afterComplete: function(){
-    pesan7.innerHTML=vketik7;setTimeout(tombol,400);
+    pesan6.innerHTML=vketik6;setTimeout(tombol,400);
   },}).go();
   }
 

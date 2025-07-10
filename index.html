@@ -18,7 +18,7 @@
 <body>
 	
   <!--Thay nhạc -->
-   <audio src="hello.mp3" id="linkmp3" class="sembunyi"></audio>
+   <audio src="https://thhlam77.github.io/music/nhac.mp3" id="linkmp3" class="sembunyi"></audio>
    <!--Thay nền (nếu muốn) -->
    <div id="bodyblur">
      <!-- Wallpaper --><img src="https://i.pinimg.com/736x/53/4a/ca/534aca075a4dc2f7586c57497c50f896.jpg" id="wallpaper"/><div id="beneranblur"></div>
@@ -45,35 +45,34 @@
      <p id="halo" class="halo"></p>
      
      <div><blockquote id='bq' data-text='💞'>
-       <p id="kalimat">MK🐬 muốn nói với Na một điều nhỏ nhoyy hoyy 👉👈</p>
+       <p id="kalimat">Hôm nay anh ở đây muốn nói với em một điều nhỏ nhoyy hoyy 👉👈</p>
 
        <!-- Pesan -->
-       <p id="pesan1">Chạm đủ 4 love nhoo  💙</p>
+       <p id="pesan1">Chạm đủ 4 love nhoo  ❤️</p>
        <div id="kolombaru">
-         <li id="lv1"> 💙</li>
-         <li id="lv2"> 💙</li>
-         <li id="lv3"> 💙</li>
-         <li id="lv4"> 💙</li>
+         <li id="lv1"> ❤️</li>
+         <li id="lv2"> ❤️</li>
+         <li id="lv3"> ❤️</li>
+         <li id="lv4"> ❤️</li>
        </div>
 
        <p id="pesan2">Tuỵt zờiiiii! 💘</p>
-       <p id="pesan3">Anh muốn nóiii với em là anhhhh.......</p>
-       <p id="pesan4" class="sty2">Anh iuu emmm nhìu lắmmm lắm nhaaaaaaa</p>
-       <p id="pesan5" class="sty2">Em pé của anh hôm nay giỏi quá đi hoi</p>
-       <p id="pesan6" class="sty2">Nhớ em muốn xỉu...xỉuu lên xỉuuuu xuống</p>
-       <p id="pesan7" class="sty2">Mai với cuối tuần nhớ ớiiii anh nhaaaaa🍀🍀🍀</p>
+       <p id="pesan3">Anh muốn nóiii với em là là là.....</p>
+       <p id="pesan4" class="sty2">Anh iuu emmm nhìu lắmmm lắm nhunnn</p>
+       <p id="pesan5" class="sty2">hong biết aiii đó có nhớ anhhh khonnggg hàaaaa</p>
+       <p id="pesan6" class="sty2">Còn anhh trong đầuuu bây giờ chỉ có hình póngg dáng em thoaii🤧</p>
 
        <!-- Tombol Lanjut -->
-       <p id="opsL">Bấm vào màn hình đi nàaaaa</p>
+       <p id="opsL">Bấm vào màn hình đi nàaaaa bbii</p>
      </blockquote></div>
 
      <!-- Tombol Kirim Pesan -->
-     <div id="Tombol"><a id="By">&#128140; Túi mù nè</a></div>
+     <div id="Tombol"><a id="By">&#128140; Click</a></div>
      
      <!-- Pesan Ditolak -->
      <div id="pesanditolak">
        <img id="stikerditolak" src="https://feeldreams.github.io/weee.gif"/>
-       <p id="kataditolak">Thích dãy quá à. Chờ tí 😒</p>
+       <p id="kataditolak">Bộ em thích từ chối lắm hả ? Nhưng mà em bị lừa rồiii cục cưng 😆</p>
      </div>
 
    </div>
@@ -85,24 +84,24 @@
   
   async function inipesan(){
     var { value: nama } = await swals.fire({
-           title: 'Nhớ ngta hog? (Có - Kó)', input: 'text',
+           title: 'Tên của bé iuu là gì?', input: 'text',
        });
-       if((nama == "Có") | (nama == "Kó")){
+       if(nama && nama.length < 11){
          window.nama = nama;
-         vketikhalo="Hé lô pé 💑";
+         vketikhalo="Hai, " + nama + " 💑";
          mulainama();
          } else {
-           await swals.fire('Có hoặc Kó hoi nha 😝');inipesan();
+           await swals.fire('Bộ em hong có tên hả!', 'Tên của người đẹp chỉ chứa 10 ký tự hoii nhaaa, ya!');inipesan();
     }
   }
 
   
-  var tanya = 'Giờ thì đi ngủ hoi nhaaaaaaa';
-  var opstanya = 'Em bé của anh ngủ ngonnnnnn💙💙💙';
-  var tompositif = 'Okie';
-  var tomnegatif = 'Hong chịu';
+  var tanya = 'có rảnh hongg nói chuyện với anh chút nhéee 😳';
+  var opstanya = 'Lựa chọn của em là......';
+  var tompositif = 'Em đồng ý';
+  var tomnegatif = 'Em hong chịu';
   
-  async function pertanyaan(){var { isConfirmed: prtanya } = await swals.fire({title: tanya, text: '' + opstanya, imageUrl: '' + fotostiker5.src, showCancelButton: true, confirmButtonText: '' + tompositif, cancelButtonText: '' + tomnegatif,});
+  async function pertanyaan(){var { isConfirmed: prtanya } = await swals.fire({title: nama + ' ' + tanya, text: '' + opstanya, imageUrl: '' + fotostiker5.src, showCancelButton: true, confirmButtonText: '' + tompositif, cancelButtonText: '' + tomnegatif,});
     if(prtanya){
 	pesanwhatsapp = "Iyaa " + nama + " kangen kamu juga kok! ><";
 	menuju();
