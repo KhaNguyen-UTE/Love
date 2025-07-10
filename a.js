@@ -22,7 +22,7 @@ function initengahan(){
 
   function tombol(){wallpaper.style="transform: scale(1);";Tombol.style="opacity:1;transform: scale(1);";fungsi=1}
   document.getElementById("By").onclick = function() {if(fungsi==1){pertanyaan();} if(fungsi==2){menuju();}}
-  async function menuju(){await swals.fire('Uci!', 'Nhớ liên hệ anhh nhaaa bấy biii , anhh có này tặng choo bbi nàa!', 'success');window.location = "https://cuongnobro.github.io/Baby/";}
+  async function menuju(){await swals.fire('Ukie!', 'Tặng pé nè', 'success');window.location = "https://khanguyen-ute.github.io/hello/1.jpg";}
   
   vketik1=kalimat.innerHTML;kalimat.innerHTML = "";
   function mulaiketik1(){
@@ -57,7 +57,15 @@ function initengahan(){
   new TypeIt("#kalimat", {
   strings: ["" + vketik2, "" + vketik3], startDelay: 20, speed: 30, cursor: true, deleteSpeed: 30, breakLines: false, waitUntilVisible: true, lifelike: true,
   afterComplete: function(){
-    kalimat.innerHTML=vketik3;setTimeout(aktipesan4,700);
+    kalimat.innerHTML=vketik3;
+    var nhacMoi = new Audio("https://khanguyen-ute.github.io/hello/Chimuonnamtaynguoi.mp3");
+    nhacMoi.play();
+    wallpaper.style.opacity = 0; // làm mờ
+    setTimeout(() => {
+    wallpaper.src = "https://khanguyen-ute.github.io/hello/1.jpg"; // đổi nền
+    wallpaper.style.opacity = 1; // hiện lại
+  }, 500); // thời gian delay khi đổi ảnh
+    setTimeout(aktipesan4,700);
   },}).go();
   }
   vketik4=pesan4.innerHTML;pesan4.innerHTML="";
@@ -77,7 +85,13 @@ function initengahan(){
   new TypeIt("#pesan5", {
   strings: ["" + vketik5], startDelay: 1, speed: 52, cursor: true, waitUntilVisible: true, lifelike: true,
   afterComplete: function(){
-    pesan5.innerHTML=vketik5 + " ><";setTimeout(aktipesan6,700);
+    pesan5.innerHTML=vketik5 + " ><";
+    wallpaper.style.opacity = 0; // làm mờ
+    setTimeout(() => {
+    wallpaper.src = "https://khanguyen-ute.github.io/hello/2.jpg"; // đổi nền
+    wallpaper.style.opacity = 1; // hiện lại
+  }, 500); // thời gian delay khi đổi ảnh
+   setTimeout(aktipesan6,700);
   },}).go();
   }
   vketik6=pesan6.innerHTML;pesan6.innerHTML="";
@@ -87,7 +101,17 @@ function initengahan(){
   new TypeIt("#pesan6", {
   strings: ["" + vketik6], startDelay: 1, speed: 52, cursor: true, waitUntilVisible: true, lifelike: true,
   afterComplete: function(){
-    pesan6.innerHTML=vketik6;setTimeout(tombol,400);
+    pesan6.innerHTML=vketik6;setTimeout(aktipesan7,700);
+  },}).go();
+  }
+  vketik7=pesan7.innerHTML;pesan7.innerHTML="";
+  function aktipesan7(){
+  wallpaper.style="transform: scale(1);";
+  fthilang();ftganti=4;setTimeout(ftmuncul,300);
+  new TypeIt("#pesan7", {
+  strings: ["" + vketik7], startDelay: 1, speed: 52, cursor: true, waitUntilVisible: true, lifelike: true,
+  afterComplete: function(){
+    pesan7.innerHTML=vketik7;setTimeout(tombol,400);
   },}).go();
   }
 
